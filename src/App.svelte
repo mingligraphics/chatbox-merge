@@ -8,18 +8,11 @@
     { sender: 'dealer', text: 'Hello friend yes how much do you need?' },
     { sender: 'wsj', text: 'To the UK as well? Can you clear customs?' },
     { sender: 'dealer', text: 'Yes, we can ship to the UK. We offer door-to-door delivery with double customs clearance and tax included' },
-    { sender: 'wsj', text: 'And what types of nitazenes do you have?' },
-    { sender: 'dealer', text: 'IsotonitazeneProtonitazeneMetonitazeneEtonitazene'},
     { sender: 'wsj', text: 'What is the max quantity you can send?' },
     { sender: 'dealer', text: 'It depends on your needs. We use disguised packaging, which is very safe. Large quantities can be shipped.' },
     { sender: 'wsj', text: 'Kilos?' },
     { sender: 'dealer', text: 'Yes' },
     { sender: 'dealer', image: 'https://images.wsj.net/im-08677925' },
-    { sender: 'wsj', text: 'Are you sending them from China?' },
-    { sender: 'dealer', text: 'Yes from China'},
-    { sender: 'dealer', text: 'We are a factory'},
-    { sender: 'wsj', text: 'What’s the kilo price for protonitazene, metonitazene and etonitazene?' },
-    { sender: 'dealer', text: 'list of things' },
     { sender: 'wsj', text: 'I am a reporter with The Wall Street Journal and I reached out to you because I am writing a story about nitazenes. Would you mind if I ask you a few additional questions?' },
     { sender: 'dealer', text: 'Ok' },
     { sender: 'wsj', text: 'Nitazenes are a highly potent and dangerous type of opioid. It has killed hundreds of people in Europe. Do you have any reservations about selling these drugs, given how dangerous they are?' },
@@ -70,7 +63,7 @@
       <div class="label wsj-label" transition:fade>WSJ reporter</div>
     {/if}
     {#if i === 1}
-      <div class="label dealer-label" transition:fade>Nitazene seller</div>
+      <div class="label dealer-label" transition:fade>Nitazenes seller in China</div>
     {/if}
       <div class="message {msg.sender} {msg.text === 'IsotonitazeneProtonitazeneMetonitazeneEtonitazene' ? 'bullet-bubble' : ''}" transition:fade>
         {#if msg.text === 'IsotonitazeneProtonitazeneMetonitazeneEtonitazene'}
